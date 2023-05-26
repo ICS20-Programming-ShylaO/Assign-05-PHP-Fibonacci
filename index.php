@@ -39,11 +39,12 @@
         <!-- php echo to print the html to the page -->
     <?php
       echo "<h1>Calculating Fibonacci Sequence</h1>";
-      echo "<h3>This program calculates and displays the Fibonacci sequence, one of nature's greatest phenomenons, ending on the term of the given integer.</h3>";
+      echo "<h3>This program calculates and
+displays the Fibonacci sequence, one of nature's greatest phenomenons, ending on the term of the given integer.</h3>";
     ?>
     <center>
-    <img src="./images/pinecone_fibonacci.jpg" alt="Fibonacci Sequence in Nature" id="pinecone" width="15%" height="auto"><br>
-      <img src="./images/fibonacci_visual.png" alt="Numerical Display Fibonacci" id="swirl" width="23%" height="auto"><br>
+    <img src="./images/pinecone_fibonacci.jpg" alt="Fibonacci Sequence in Nature" id="pinecone"><br>
+      <img src="./images/fibonacci_visual.png" alt="Numerical Display Fibonacci" id="swirl"><br>
       
     <!-- Form for the positive integer -->
       <br><br>
