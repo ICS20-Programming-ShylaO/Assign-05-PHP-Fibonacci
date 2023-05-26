@@ -30,21 +30,21 @@ else {
             $response = $response . $previousTerm;
         }
           // build the response by using the empty string and adding the previous term and next term
-      else {
-        $response = $response . $previousTerm . ", ";
-      }
-      // setting current term to previous term + next term in order to set next term to the current term
-      $currentTerm = $previousTerm + $nextTerm;
-      // previous term turns to next term as per rules of the sequence
-      $previousTerm = $nextTerm;
-      // following rules of the sequence: current term/sum becomes the next term
-      $nextTerm = $currentTerm;
+        else {
+            $response = $response . $previousTerm . ", ";
+        }
+        // setting current term to previous term + next term in order to set next term to the current term
+        $currentTerm = $previousTerm + $nextTerm;
+        // previous term turns to next term as per rules of the sequence
+        $previousTerm = $nextTerm;
+        // following rules of the sequence: current term/sum becomes the next term
+        $nextTerm = $currentTerm;
     }
 }
 if ((!is_numeric($maxTermNum)) || ($maxTermNum < 0)) {
-  echo $response;
+    echo $response;
 }
 else {
-  // display special response and fibonacci sequence to user
-  echo $specialResponse . "<br>The Fibonacci sequence ending on Term " . $maxTermNum . " is " . $response;
+    // display special response and fibonacci sequence to user
+    echo $specialResponse . "<br>The Fibonacci sequence ending on Term " . $maxTermNum . " is " . $response;
 }
