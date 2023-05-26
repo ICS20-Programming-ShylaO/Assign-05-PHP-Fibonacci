@@ -14,7 +14,7 @@ if (!is_numeric($maxTermNum)) {
     $response = "Please enter a valid integer.";
 }
 // response for when user doesn't enter a positive integer
-elseif ($maxTermNum < 0) { 
+elseif ($maxTermNum < 0) {
     $response = "Please enter an integer greater than -1.";
 }
 // else to start the loop
@@ -26,12 +26,12 @@ else {
     // for loop to calculate the fibonacci sequence starting from 0, ending with max term
     for ($counter = 0; $counter <= $maxTermNum; $counter++) {
       //ending the response once counter == maxTermNum
-      if ($counter == $maxTermNum) {
-        $response = $response . $previousTerm;
-      }
-      // build the response by using the empty string and adding the previous term and next term
+        if ($counter == $maxTermNum) {
+            $response = $response . $previousTerm;
+        }
+          // build the response by using the empty string and adding the previous term and next term
       else {
-          $response = $response . $previousTerm . ", ";
+        $response = $response . $previousTerm . ", ";
       }
       // setting current term to previous term + next term in order to set next term to the current term
       $currentTerm = $previousTerm + $nextTerm;
@@ -40,11 +40,11 @@ else {
       // following rules of the sequence: current term/sum becomes the next term
       $nextTerm = $currentTerm;
     }
-  }
-  if ((!is_numeric($maxTermNum)) || ($maxTermNum < 0)) {
-    echo $response;
-  }
-  else {
-    // display special response and fibonacci sequence to user
-    echo $specialResponse . "<br>The Fibonacci sequence ending on Term " . $maxTermNum . " is " . $response;
-  }
+}
+if ((!is_numeric($maxTermNum)) || ($maxTermNum < 0)) {
+  echo $response;
+}
+else {
+  // display special response and fibonacci sequence to user
+  echo $specialResponse . "<br>The Fibonacci sequence ending on Term " . $maxTermNum . " is " . $response;
+}
