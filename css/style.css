@@ -1,0 +1,56 @@
+/* Created by: Shyla Oommen
+* Created on: May 2023
+* This CSS file defines the style for index.html
+* ICS2O-Programming-Assign-05-PHP-Fibonacci
+*/
+
+body {
+  background-color: #f8e5ee;
+}
+
+h1, h3 {
+  background-color: #9f2042;
+  text-align: center;
+  border: 2px solid #3d1308;
+  color: white;
+  font-weight: bold;
+  padding-left: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+p, form {
+  background-color: #9f2042;
+  border: 2px solid #3d1308;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 115%;
+}
+
+#results {
+  background-color: #9f2042;
+  border: 2px solid #3d1308;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 115%;
+}
+
+#pinecone {
+  float: right;
+  margin-right: 50px;
+  border: 5px solid #211103;
+}
+
+#swirl {
+  float: left;
+  margin-left: 50px;
+  border: 5px solid #211103;
+}
